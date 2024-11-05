@@ -4,6 +4,8 @@
 #include<unistd.h>
 #include<sys/wait.h>
 
+pid_t pid;
+
 void reemplazarCaracter(char cadena[], char caracter,char reemplazar) {
     if (cadena == NULL) {
         return;
@@ -20,7 +22,7 @@ int main(){
   char cadena[100];
   char *argumentos[100];
   char *comando;
-  pid_t pid;
+ // pid_t pid;
   int estado;
 
  while(1) {
